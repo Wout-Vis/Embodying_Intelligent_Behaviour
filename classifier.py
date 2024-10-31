@@ -2,7 +2,7 @@ from tensorflow import keras
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 
-
+#Load in the prediction model, and predict the result
 def predict_class(data):
     sc = StandardScaler()
 

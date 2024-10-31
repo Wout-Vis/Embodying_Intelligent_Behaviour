@@ -41,9 +41,6 @@ def calculate_ground_angle_with_check(p1, p2):
     p1 = adjust_for_missing_data(p1)
     return calculate_ground_angle(p1, p2)
 
-# Example data block
-
-
 def angle_calculator(data_block):
 
 

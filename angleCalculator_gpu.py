@@ -1,6 +1,6 @@
 import numpy as np
 
-# Function to calculate angle between three points
+# Function to calculate angle between three points, for point P2
 def calculate_angle(p1, p2, p3):
     # Create vectors from points
     v1 = p1 - p2
@@ -23,7 +23,7 @@ def calculate_angle(p1, p2, p3):
 # Function to calculate angle relative to ground (horizontal)
 def calculate_ground_angle(p1, p_ground):
     v = p1 - p_ground
-    angle_radians = np.arctan2(v[1], v[0])  # atan2(y, x) gives the angle relative to the x-axis
+    angle_radians = np.arctan2(v[1], v[0])
     angle_degrees = np.degrees(angle_radians)
     return abs(angle_degrees)
 
